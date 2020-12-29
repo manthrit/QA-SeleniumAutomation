@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite_TestNGAnnotations">
+	<test name="Test_TestNGAnnotations">
+		
+	<groups>
+		<dependencies>
+			<group name="smoke" depends-on="functionalTest"/>
+		</dependencies>
+	</groups>
+	
+		<classes>
+			<class name="com.testng.dependencies_Test" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite_TestNG_groups">
+	<test name="Test_TestNG_groups">
+		
+	<groups>
+		<run>
+			<exclude name="smoke"/>
+			<include name="functionalTest"/>
+		</run>
+	</groups>
+	
+		<classes>
+			<class name="com.testng.TestngAnnotation" />
+			<class name="com.testng.SkipTest" />
+			<class name="com.testng.groupsTest" />
+		</classes>
+	</test>
+</suite>

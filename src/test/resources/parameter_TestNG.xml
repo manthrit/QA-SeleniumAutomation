@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite_TestNG_parameter">
+	<test name="Test_TestNG_parameter">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.testng.ParametersTest"/>
+		</classes>
+	</test>
+</suite>
