@@ -1,5 +1,7 @@
 package com.bdd;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,6 +33,6 @@ public class Sample_stepDefinition
     @Then("^run should be successful2$")
     public void thenStatment2(){
            System.out.println("Then statement executed successfully_2");
+           ChromeDriver driver = new ChromeDriver();
     }
-	
 }

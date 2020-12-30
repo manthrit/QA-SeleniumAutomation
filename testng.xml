@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite_TestNGAnnotations">
+	<test name="Test_TestNGAnnotations">
+		<classes>
+			<class name="com.testng.TestngAnnotation" />
+		</classes>
+	</test>
+</suite>

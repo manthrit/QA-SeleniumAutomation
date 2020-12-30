@@ -16,7 +16,7 @@ public class TestngAnnotation
 	 // Test Case 1
 	   @Test
 	   public void testCase1() {
-	      System.out.println("in Test Case 1");
+	      System.out.println("in Test Case 1 ");
 	   }
 
 	   // Test Case 2
