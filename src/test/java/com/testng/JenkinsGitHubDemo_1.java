@@ -25,9 +25,17 @@ public class JenkinsGitHubDemo_1
 					driver.get("https://www.google.com/");
 					break;
 			case "chrome":
+					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.chrome.driver", "D://Software//BrowserDrivers//chromedriver.exe");
-					driver = new ChromeDriver();
-					driver.get("https://www.google.com/");
+					try {
+						Thread.sleep(5000);
+						driver = new ChromeDriver();
+						driver.get("https://www.google.com/");
+						Thread.sleep(5000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 					break;
 			case "IE":
 					driver = new InternetExplorerDriver();
@@ -36,9 +44,8 @@ public class JenkinsGitHubDemo_1
 					System.setProperty("webdriver.edge.driver", "D://Software//BrowserDrivers//msedgedriver.exe");
 					driver=new EdgeDriver();
 					driver.get("https://www.google.com/");
-			default:
-					System.out.println("browser : " + browserType + " is invalid, Launching Firefox as browser of choice..");
-					driver = new ChromeDriver();
+					break;
+
 		}
 	
 	}	
