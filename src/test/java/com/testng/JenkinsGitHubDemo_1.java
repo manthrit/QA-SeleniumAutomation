@@ -13,8 +13,9 @@ public class JenkinsGitHubDemo_1
 
 	@Test
 	//@Parameters("browserType")
-	public void parameterizedTest_01(String browserType){
+	public void parameterizedTest_01(){
 		WebDriver driver;
+		String browserType = System.getProperty("browserType");
 		switch(browserType)
 		{
 			case "firefox":
