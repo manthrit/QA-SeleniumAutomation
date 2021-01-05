@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite_JenkinsGitHub">
+	<test name="Test_JenkinsGitHub">
+		<classes>
+			<class name="com.testng.JenkinsGitHubDemo_1" />
+		</classes>
+	</test>
+</suite>
