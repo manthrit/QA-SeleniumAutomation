@@ -16,6 +16,7 @@ public class JenkinsGitHubDemo_1
 	public void parameterizedTest_01(){
 		WebDriver driver;
 		String browserType = System.getProperty("browserType");
+		System.out.println(" ===============browserType================ : " + browserType);
 		switch(browserType)
 		{
 			case "firefox":
