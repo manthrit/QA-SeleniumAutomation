@@ -21,11 +21,11 @@ public class Demo1_JenkinsEclipse
 			case "firefox":
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.gecko.driver", "D://Software//BrowserDrivers//geckodriver.exe");
+					driver = new FirefoxDriver();
 					try {
-						Thread.sleep(15000);
-						driver = new FirefoxDriver();
+						Thread.sleep(8000);
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(15000);
+						Thread.sleep(3000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -34,11 +34,11 @@ public class Demo1_JenkinsEclipse
 			case "chrome":
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.chrome.driver", "D://Software//BrowserDrivers//chromedriver.exe");
+					driver = new ChromeDriver();
 					try {
-						Thread.sleep(15000);
-						driver = new ChromeDriver();
+						Thread.sleep(8000);
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(15000);
+						Thread.sleep(3000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

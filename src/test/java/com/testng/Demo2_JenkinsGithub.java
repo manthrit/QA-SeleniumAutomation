@@ -14,7 +14,7 @@ public class Demo2_JenkinsGithub
 	@Test
 	public void parameterizedTest_01(){
 		WebDriver driver;
-		String browserType = System.getProperty("browserType");
+		String browserType = "firefox";//System.getProperty("browserType");
 		System.out.println(" ===============browserType================ : " + browserType);
 		switch(browserType)
 		{
@@ -23,21 +23,22 @@ public class Demo2_JenkinsGithub
 					System.setProperty("webdriver.gecko.driver", "D://Software//BrowserDrivers//geckodriver.exe");
 					try {
 						driver = new FirefoxDriver();
-						Thread.sleep(10000);
+						Thread.sleep(8000);
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(5000);
+						Thread.sleep(3000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+					break;
 			case "chrome":
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.chrome.driver", "D://Software//BrowserDrivers//chromedriver.exe");
 					try {
 						driver = new ChromeDriver();
-						Thread.sleep(10000);
+						Thread.sleep(8000);
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(5000);
+						Thread.sleep(3000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
