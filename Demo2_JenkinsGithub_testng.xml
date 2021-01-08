@@ -3,7 +3,7 @@
 <suite name="Suite_JenkinsGitHub">
 	<test name="Test_JenkinsGitHub">
 		<classes>
-			<class name="com.testng.JenkinsGitHubDemo_1" />
+			<class name="com.testng.Demo2_JenkinsGithub" />
 		</classes>
 	</test>
 </suite>

@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-04T22:32:28 PST" name="Suite_JenkinsGitHub_parameter" finished-at="2021-01-04T22:32:34 PST" duration-ms="6484">
+  <suite started-at="2021-01-05T01:19:16 PST" name="Default suite" finished-at="2021-01-05T01:19:22 PST" duration-ms="5239">
     <groups>
     </groups>
-    <test started-at="2021-01-04T22:32:28 PST" name="Test_JenkinsGitHub_parameter" finished-at="2021-01-04T22:32:34 PST" duration-ms="6484">
-      <class name="com.testng.JenkinsGitHubDemo_1">
-        <test-method signature="parameterizedTest_01(java.lang.String)[pri:0, instance:com.testng.JenkinsGitHubDemo_1@306cf3ea]" started-at="2021-01-04T22:32:28 PST" name="parameterizedTest_01" finished-at="2021-01-04T22:32:34 PST" duration-ms="6464" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-01-05T01:19:16 PST" name="Default test" finished-at="2021-01-05T01:19:22 PST" duration-ms="5239">
+      <class name="com.testng.Parallel_Test">
+        <test-method signature="getChrome()[pri:0, instance:com.testng.Parallel_Test@5136d012]" started-at="2021-01-05T01:19:16 PST" name="getChrome" finished-at="2021-01-05T01:19:22 PST" duration-ms="5219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- parameterizedTest_01 -->
-      </class> <!-- com.testng.JenkinsGitHubDemo_1 -->
-    </test> <!-- Test_JenkinsGitHub_parameter -->
-  </suite> <!-- Suite_JenkinsGitHub_parameter -->
+        </test-method> <!-- getChrome -->
+      </class> <!-- com.testng.Parallel_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

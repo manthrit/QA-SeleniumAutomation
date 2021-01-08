@@ -8,11 +8,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class JenkinsGitHubDemo_1 
+public class Demo2_JenkinsGithub 
 {
 
 	@Test
-	//@Parameters("browserType")
 	public void parameterizedTest_01(){
 		WebDriver driver;
 		String browserType = System.getProperty("browserType");
@@ -30,7 +29,7 @@ public class JenkinsGitHubDemo_1
 					try {
 						Thread.sleep(5000);
 						driver = new ChromeDriver();
-						driver.get("https://www.google.com/");
+						driver.get("https://www.wellsfargo.com/");
 						Thread.sleep(5000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block

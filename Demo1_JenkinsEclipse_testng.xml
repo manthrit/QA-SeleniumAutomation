@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite_JenkinsEclipse">
+	<test name="Test_JenkinsEclipse">
+	<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="com.testng.Demo1_JenkinsEclipse" />
+		</classes>
+	</test>
+</suite>
