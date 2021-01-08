@@ -2,7 +2,7 @@
 
 <suite name="Suite_JenkinsEclipse">
 	<test name="Test_JenkinsEclipse">
-	<parameter name="browserType" value="chrome"></parameter>
+	<parameter name="browserType" value="firefox"></parameter>
 		<classes>
 			<class name="com.testng.Demo1_JenkinsEclipse" />
 		</classes>
