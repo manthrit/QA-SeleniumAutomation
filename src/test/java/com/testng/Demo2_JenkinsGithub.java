@@ -14,7 +14,7 @@ public class Demo2_JenkinsGithub
 	@Test
 	public void parameterizedTest_01(){
 		WebDriver driver;
-		String browserType = "firefox";//System.getProperty("browserType");
+		String browserType = System.getProperty("browserType");
 		System.out.println(" ===============browserType================ : " + browserType);
 		switch(browserType)
 		{
