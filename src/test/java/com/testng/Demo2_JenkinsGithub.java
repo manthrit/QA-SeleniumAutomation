@@ -22,10 +22,10 @@ public class Demo2_JenkinsGithub
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.gecko.driver", "D://Software//BrowserDrivers//geckodriver.exe");
 					try {
-						Thread.sleep(50000);
+						Thread.sleep(15000);
 						driver = new FirefoxDriver();
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(50000);
+						Thread.sleep(15000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

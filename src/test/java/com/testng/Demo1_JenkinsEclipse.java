@@ -22,10 +22,10 @@ public class Demo1_JenkinsEclipse
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.gecko.driver", "D://Software//BrowserDrivers//geckodriver.exe");
 					try {
-						Thread.sleep(5000);
+						Thread.sleep(15000);
 						driver = new FirefoxDriver();
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(5000);
+						Thread.sleep(15000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -35,10 +35,10 @@ public class Demo1_JenkinsEclipse
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.chrome.driver", "D://Software//BrowserDrivers//chromedriver.exe");
 					try {
-						Thread.sleep(5000);
+						Thread.sleep(15000);
 						driver = new ChromeDriver();
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(5000);
+						Thread.sleep(15000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
