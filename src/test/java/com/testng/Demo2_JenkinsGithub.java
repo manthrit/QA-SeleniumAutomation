@@ -19,18 +19,25 @@ public class Demo2_JenkinsGithub
 		switch(browserType)
 		{
 			case "firefox":
+					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.gecko.driver", "D://Software//BrowserDrivers//geckodriver.exe");
-					driver = new FirefoxDriver();
-					driver.get("https://www.google.com/");
-					break;
+					try {
+						Thread.sleep(50000);
+						driver = new FirefoxDriver();
+						driver.get("https://www.wellsfargo.com/");
+						Thread.sleep(50000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 			case "chrome":
 					System.out.println(" ===============Inside Switch case================ : " + browserType);
 					System.setProperty("webdriver.chrome.driver", "D://Software//BrowserDrivers//chromedriver.exe");
 					try {
-						Thread.sleep(5000);
+						Thread.sleep(50000);
 						driver = new ChromeDriver();
 						driver.get("https://www.wellsfargo.com/");
-						Thread.sleep(5000);
+						Thread.sleep(50000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
