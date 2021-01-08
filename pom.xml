@@ -126,11 +126,11 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>Demo1_JenkinsEclipse_testng.xml</suiteXmlFile>
+						<suiteXmlFile>${xmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
-<!-- 					<systemPropertyVariables> -->
-<!-- 						<executionBrowser>firefox</executionBrowser> -->
-<!-- 					</systemPropertyVariables> -->
+					<systemPropertyVariables>
+						<executionBrowser>${browserType}</executionBrowser>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 
